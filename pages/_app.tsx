@@ -1,17 +1,17 @@
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 import {
   ColorScheme,
   ColorSchemeProvider,
   Group,
   MantineProvider,
-} from "@mantine/core";
-import { useState } from "react";
-import Head from "next/head";
+} from '@mantine/core';
+import { useState } from 'react';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('dark');
   const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
   return (
     <>
       <ColorSchemeProvider
@@ -29,11 +29,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           theme={{
             colorScheme,
             shadows: {
-              md: "1px 1px 3px rgba(0, 0, 0, .25)",
-              xl: "5px 5px 3px rgba(0, 0, 0, .25)",
+              md: '1px 1px 3px rgba(0, 0, 0, .25)',
+              xl: '5px 5px 3px rgba(0, 0, 0, .25)',
             },
             headings: {
-              fontFamily: "Open Sans, sans serif",
+              fontFamily: 'Overpass, sans-serif',
             },
           }}
           withGlobalStyles
