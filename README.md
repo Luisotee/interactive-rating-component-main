@@ -2,7 +2,8 @@
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
-​## Live demo with Vercel
+
+## Live demo with Vercel
 
 Take a look at this project at: https://interactive-rating-component-main-sage.vercel.app/
 
