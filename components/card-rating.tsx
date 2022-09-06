@@ -8,6 +8,7 @@ import {
   Text,
   Title,
 } from '@mantine/core';
+import { IconAlertCircle } from '@tabler/icons';
 import { useState } from 'react';
 import { CardRatingProps } from '../types';
 
@@ -55,6 +56,14 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
       setButtonColor3('gray');
       setButtonColor4('gray');
       setButtonColor5('orange');
+    }
+  }
+
+  function handleSubmit() {
+    if (grade != 0) {
+      setSent(true);
+    } else {
+      alert('Please select a grade before submitting!');
     }
   }
 
@@ -152,7 +161,7 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
         fullWidth
         mt="md"
         radius="lg"
-        onClick={() => setSent(true)}
+        onClick={handleSubmit}
       >
         SUBMIT
       </Button>
