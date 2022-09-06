@@ -2,6 +2,13 @@
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
+
+## Live demo with Vercel
+
+Take a look at this project at: https://interactive-rating-component-main-sage.vercel.app/
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
