@@ -11,6 +11,8 @@ import {
 import { useState } from 'react';
 import { CardRatingProps } from '../types';
 
+export var grade = 0;
+
 export function CardRating({ isSent, setSent }: CardRatingProps) {
   const [buttonColor1, setButtonColor1] = useState('gray');
   const [buttonColor2, setButtonColor2] = useState('gray');
@@ -84,7 +86,10 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
             radius="xl"
             size="md"
             color={buttonColor1}
-            onClick={() => gradeHandle(1)}
+            onClick={() => {
+              gradeHandle(1);
+              grade = 1;
+            }}
           >
             1
           </Button>
@@ -94,7 +99,10 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
             radius="xl"
             size="md"
             color={buttonColor2}
-            onClick={() => gradeHandle(2)}
+            onClick={() => {
+              gradeHandle(2);
+              grade = 2;
+            }}
           >
             2
           </Button>
@@ -104,7 +112,10 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
             radius="xl"
             size="md"
             color={buttonColor3}
-            onClick={() => gradeHandle(3)}
+            onClick={() => {
+              gradeHandle(3);
+              grade = 3;
+            }}
           >
             3
           </Button>
@@ -114,7 +125,10 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
             radius="xl"
             size="md"
             color={buttonColor4}
-            onClick={() => gradeHandle(4)}
+            onClick={() => {
+              gradeHandle(4);
+              grade = 4;
+            }}
           >
             4
           </Button>
@@ -124,7 +138,10 @@ export function CardRating({ isSent, setSent }: CardRatingProps) {
             radius="xl"
             size="md"
             color={buttonColor5}
-            onClick={() => gradeHandle(5)}
+            onClick={() => {
+              gradeHandle(5);
+              grade = 5;
+            }}
           >
             5
           </Button>
